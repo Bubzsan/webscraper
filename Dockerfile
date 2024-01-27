@@ -39,5 +39,5 @@ RUN pip install spacy && python -m spacy download en_core_web_sm
 COPY web_scraper.py .
 
 # Command to run the script
-ENTRYPOINT ["python", "./web_scraper.py"]
-# ENTRYPOINT [ "/bin/bash" ]
+# ENTRYPOINT ["python", "./web_scraper.py"]
+ENTRYPOINT [ "/bin/bash" ]
